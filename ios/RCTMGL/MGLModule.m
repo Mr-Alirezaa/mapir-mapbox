@@ -34,6 +34,12 @@ RCT_EXPORT_MODULE();
     [styleURLS setObject:[MGLStyle.satelliteStyleURL absoluteString] forKey:@"Satellite"];
     [styleURLS setObject:[MGLStyle.satelliteStreetsStyleURL absoluteString] forKey:@"SatelliteStreet"];
 
+    // Map.ir Style URLs.
+    [styleURLS setObject:[SHStyle.vernaStyleURL absoluteString] forKey:@"Verna"];
+    [styleURLS setObject:[SHStyle.isatisStyleURL absoluteString] forKey:@"Isatis"];
+    [styleURLS setObject:[SHStyle.carmaniaStyleURL absoluteString] forKey:@"Carmania"];
+    [styleURLS setObject:[SHStyle.hyrcaniaStyleURL absoluteString] forKey:@"Hyrcania"];
+
     // event types
     NSMutableDictionary *eventTypes = [[NSMutableDictionary alloc] init];
     [eventTypes setObject:RCT_MAPBOX_EVENT_TAP forKey:@"MapClick"];
